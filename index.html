@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>linkedin.com</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar-left">
+            <a href="index.html" class="logo"><img src="IMAGES/logo.png" alt="logo"></a>
+
+            <div class="search-box">
+                <img src="IMAGES/search.png" alt="search-ig">
+                <input type="text" placeholder="Search">
+            </div>
+        </nav>
+        <nav class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="IMAGES/home.png" alt="" ><span>Home</span></a></li>
+                <li><a href="#"><img src="IMAGES/network.png" alt=""><span>My Network</span></a></li>
+                <li><a href="#"><img src="IMAGES/jobs.png" alt=""><span>Jobs</span></a></li>
+                <li><a href="#"><img src="IMAGES/message.png" alt=""><span>Messaging</span></a></li>
+                <li><a href="#"><img src="IMAGES/notification.png" alt=""><span>Notificaions</span></a></li>
+            </ul>
+        </nav>
+        <nav class="navbar-right">
+            <div class="online" id="online">
+                <img src="IMAGES/img-2.jpg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+            
+        </nav>
+    <!-- ---------------------profile-drop-down-menu------------- -->
+        <div class="profile-menu-container" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="IMAGES/img-8.jpg" alt="">
+                    <div>
+                        <h3>Anthony Ajuba</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="IMAGES/feedback.png" alt="">
+                    <p>Give feedback</p>
+                    <span> > </span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="IMAGES/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span> > </span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="IMAGES/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span> > </span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="IMAGES/display.png" alt="">
+                    <p>Display & Accessibility</p>
+                    <span> > </span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="IMAGES/logout.png" alt="">
+                    <p>Logout</p>
+                    <span> > </span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!------------------------ header ends ------------------------->
+ 
+
+    <div class="container">
+        <!-- ---------------------left-sidebar----------------------- -->
+        <!-- ---------------------left-sidebar----------------------- -->
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="IMAGES/img-4.jpg" alt="sdbp-img" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="IMAGES/img-8.jpg" alt="">
+                    <h1>Anthony Ajuba</h1>
+                    <h3>Blockchain FS Developer at GitHub</h3>
+                    <ul>
+                        <li>Your profile views <span>52</span></li>
+                        <li>Your post views <span>520</span></li>
+                        <li>Your connections <span>900</span></li>
+                    </ul>
+                </div>
+                <div class="sidebar-profile-link">
+                    <a href="#"><img src="IMAGES/items.png" alt="">My items</a>
+                    <a href="#"><img src="IMAGES/premium.png" alt="">Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity" id="sideBarActivity">
+                <h3>RECENT</h3>
+                <a href="#"><img src="IMAGES/recent.png" alt="">Web Development</a>
+                <a href="#"><img src="IMAGES/recent.png" alt="">Online learning</a>
+                <a href="#"><img src="IMAGES/recent.png" alt="">Group learning</a>
+                <a href="#"><img src="IMAGES/recent.png" alt="">Freelancing</a>
+                <a href="#"><img src="IMAGES/recent.png" alt="">Computer Training</a>
+                <h3>Groups</h3>
+                <a href="#"><img src="IMAGES/group.png" alt="">Web Developers Group</a>
+                <a href="#"><img src="IMAGES/group.png" alt="">Blockchain Developers Group</a>
+                <a href="#"><img src="IMAGES/group.png" alt="">Problem Solvers Group</a>
+                <a href="#"><img src="IMAGES/group.png" alt="">Algorithm Experts</a>
+                <h3>Hashtags</h3>
+                <a href="#"><img src="IMAGES/hashtag.png" alt="">webdevelopment</a>
+                <a href="#"><img src="IMAGES/hashtag.png" alt="">futuretech</a>
+                <a href="#"><img src="IMAGES/hashtag.png" alt="">blockchaindevelopment</a>
+                <a href="#"><img src="IMAGES/hashtag.png" alt="">algorithmicadvancement</a>
+
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+            <p id="showMoreLink" onclick="toggleActivity()">Show More <b>+</b></p>
+        </div>
+
+        <!-- ---------------------main-content----------------------- -->
+        <!-- ---------------------main-content----------------------- -->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="IMAGES/img-8.jpg" alt="post-img">
+                    <textarea rows="2" placeholder="Write a Post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="IMAGES/photo.png" alt="">Photo</li>
+                    <li><img src="IMAGES/video.png" alt="">Video</li>
+                    <li><img src="IMAGES/event.png" alt="">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>Sort by: <span><img src="IMAGES/down-arrow.png" alt=""></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="IMAGES/img-8.jpg" alt="">
+                    <div class="post-info">
+                        <h1>Anthony Ajuba</h1>
+                        <small>Founder and CEO at futureTech Group | futureTech Limited</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>You may like to make your own research and when you do, you will find out that the success story of all the succeful men that we have in the world today is not the same. But one thing is common --hardwork--A never-give-up spirit I am a living testimony. Just know that your today's little hardwork pays tomorrow. So start working.</p>
+                <img src="IMAGES/img-5.jpg" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="IMAGES/thumbsup.png" alt="">
+                        <img src="IMAGES/love.png" alt="">
+                        <img src="IMAGES/clap.png" alt="">
+                        <span class="liked-users">Elon Musk and 750 others</span>
+                    </div>
+                    <div>
+                        <span>900 comments, &middot; 789 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="IMAGES/user-4.png" alt="" class="post-activity-user-icon">
+                        <img src="IMAGES/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="IMAGES/user-5.png" alt="">
+                    <div class="post-info">
+                        <h1>Mark Zuckerberk</h1>
+                        <small>Founder and CEO at Meta Group | Meta Limited</small>
+                        <small>1 hours ago</small>
+                    </div>
+                </div>
+                <p>You may like to make your own research and when you do, you will find out that the success story of all the succeful men that we have in the world today is not the same. But one thing is common --hardwork. A never-give-up spirit. so start working</p>
+                <img src="IMAGES/post-image-4.png" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="IMAGES/thumbsup.png" alt="">
+                        <img src="IMAGES/love.png" alt="">
+                        <img src="IMAGES/clap.png" alt="">
+                        <span class="liked-users">Elon Musk and 750 others</span>
+                    </div>
+                    <div>
+                        <span>767 comments, &middot; 700 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="IMAGES/user-4.png" alt="" class="post-activity-user-icon">
+                        <img src="IMAGES/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/img-5.jpg" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="IMAGES/user-3.png" alt="">
+                    <div class="post-info">
+                        <h1>Jeff Bezos</h1>
+                        <small>Founder and CEO at Amazon Group | Amazon Limited</small>
+                        <small>7 hours ago</small>
+                    </div>
+                </div>
+                <p>You may like to make your own research and when you do, you will find out that the success story of all the succeful men that we have in the world today is not the same. But one thing is common --hardwork. A never-give-up spirit. so start working</p>
+                <img src="IMAGES/post-image-3.png" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="IMAGES/thumbsup.png" alt="">
+                        <img src="IMAGES/love.png" alt="">
+                        <img src="IMAGES/clap.png" alt="">
+                        <span class="liked-users">Elon Musk and 750 others</span>
+                    </div>
+                    <div>
+                        <span>767 comments, &middot; 700 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="IMAGES/user-4.png" alt="" class="post-activity-user-icon">
+                        <img src="IMAGES/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="IMAGES/user-4.png" alt="">
+                    <div class="post-info">
+                        <h1>Larry Page</h1>
+                        <small>Founder and CEO at Google Group | Google Limited</small>
+                        <small>12 hours ago</small>
+                    </div>
+                </div>
+                <p>You may like to make your own research and when you do, you will find out that the success story of all the succeful men that we have in the world today is not the same. But one thing is common --hardwork. A never-give-up spirit. so start working</p>
+                <img src="IMAGES/post-image-4.png" alt="" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="IMAGES/thumbsup.png" alt="">
+                        <img src="IMAGES/love.png" alt="">
+                        <img src="IMAGES/clap.png" alt="">
+                        <span class="liked-users">Elon Musk and 750 others</span>
+                    </div>
+                    <div>
+                        <span>769 comments, &middot; 999 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="IMAGES/user-2.png" alt="" class="post-activity-user-icon">
+                        <img src="IMAGES/down-arrow.png" alt="" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/like.png" alt="">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/comment.png" alt="">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/share.png" alt="">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-icon">
+                        <img src="IMAGES/send.png" alt="">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------------right-idebar----------------------- -->
+        <!-- ---------------------right-idebar----------------------- -->
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="IMAGES/more.png" alt="info-icon" class="info-icon">
+                <h3>Trending News</h3>
+                <a href="#">High demand skilled Developers</a>
+                <span>23hours ago $middot, 12054 readers</span>
+
+                <a href="#">Deployment of web 3.0 and its effects</a>
+                <span>1day ago $middot, 12054 readers</span>
+
+                <a href="#">Less work visa for UK, more for US</a>
+                <span>17hours ago $middot, 12054 readers</span>
+
+                <a href="#">More hiring, higher confidence</a>
+                <span>5hours ago $middot, 12054 readers</span>
+
+                <a href="#" class="read-more-link">Read More</a>
+            </div>
+
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>Master the top principles of agorithmic thinking</p>
+                <div class="sidebar-ad-img">
+                    <img src="IMAGES/user-2.png" alt="">
+                    <img src="IMAGES/mi-logo.png" alt="">
+                </div>
+                <b>Brands and demands in the tech gargets</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-useful-link">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Advertising</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="IMAGES/logo.png" alt="">
+                    <a href="#">Ownership Anthony 2022, All right reserved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="profile.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
